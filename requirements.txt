@@ -1,0 +1,8 @@
+django
+pandas
+numpy
+scipy
+librosa
+pychorus
+spotipy
+git+https://github.com/ytdl-org/youtube-dl.git@master#egg=youtube_dl
