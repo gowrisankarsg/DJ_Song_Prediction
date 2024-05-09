@@ -65,7 +65,7 @@
 <body>
     <div class="container">
         <h2>PREDICTION Via UPLOAD SONGS</h2>
-        <form method="post" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="file" name="audio_file" accept="audio/*" required>
             <button type="submit">Predict</button>
