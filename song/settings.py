@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-intuq#c1nlp4vc^%b)6*!1%@&#9vc9vgr-wdkh#j@ty2hd6f(2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [https://song-prediction.onrender.com]
+ALLOWED_HOSTS = ["https://song-prediction.onrender.com"]
 
 
 # Application definition
