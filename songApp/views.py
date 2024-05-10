@@ -14,6 +14,7 @@ import os
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import youtube_dl
+from django.views.decorators.csrf import csrf_protect
 
 
 
@@ -272,7 +273,7 @@ def download_mp3(track_name, artists):
 def home(request):
     return render(request, 'home.html')
 
-
+@csrf_protect
 def upload(request):    
     if request.method == 'POST' and request.FILES['audio_file']:
         song = request.FILES['audio_file']
@@ -284,6 +285,7 @@ def upload(request):
         return render(request,'upload.html',{"pred": pred, "song_name":song_name})
     return render(request, 'upload.html')
 
+@csrf_protect
 def link(request):
     if request.method == 'POST':
         link = request.POST.get('link')
