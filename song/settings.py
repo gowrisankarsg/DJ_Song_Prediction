@@ -29,6 +29,12 @@ DEBUG = True
 ALLOWED_HOSTS = ["song-prediction.onrender.com"]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://song-prediction.onrender.com',
+    # Add any other trusted origins as needed
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
