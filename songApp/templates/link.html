@@ -64,10 +64,10 @@
         {% if pred and track_name %}
             <h2>PREDICTION :</h2>
             {% if pred == 'Popular' %}
-                <p>{{ track_name }} song is <span style="color:green ;">{{ pred }}</span></p>
+                <p>{{ track_name }} song is <span style="color:green ;"><b>{{ pred }}</b></span></p>
             {% endif %}
             {% if pred == 'NOT Popular' %}
-                <p>{{ track_name }} song is <span style="color:red ;">{{ pred }}</span></p>
+                <p>{{ track_name }} song is <span style="color:red ;"><b>{{ pred }}</b></span></p>
             {% endif %}
         {% endif %}
     </div>
