@@ -70,6 +70,11 @@
                 <p>{{ track_name }} song is <span style="color:red ;"><b>{{ pred }}</b></span></p>
             {% endif %}
         {% endif %}
+        <br>
+        <div class="buttons">
+            <a href="{% url '' %}"><button>Home Page</button></a>
+            <a href="{% url 'upload' %}"><button>Via Upload Song</button></a>            
+        </div>
     </div>
 </body>
 </html>
